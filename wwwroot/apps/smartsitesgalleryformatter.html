@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SmartSitesGalleryFormatter — Michelle Nesbitt</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+<main id="main" style="padding-bottom:40px;">
+  <div class="detail-topbar">
+    <a class="back-link" href="../#work">← Back to portfolio</a>
+    <div class="social-links">
+      <a href="https://github.com/m1sh3ll" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg></a>
+      <a href="https://www.linkedin.com/in/m1sh3ll3/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 16 16"><path d="M14.82 0H1.18C.53 0 0 .53 0 1.18v13.64C0 15.47.53 16 1.18 16h13.64c.65 0 1.18-.53 1.18-1.18V1.18C16 .53 15.47 0 14.82 0ZM4.75 13.4H2.4V6h2.35v7.4ZM3.58 4.98a1.36 1.36 0 1 1 0-2.72 1.36 1.36 0 0 1 0 2.72ZM13.6 13.4h-2.35V9.8c0-.86-.02-1.96-1.2-1.96-1.2 0-1.39.94-1.39 1.9v3.66H6.31V6h2.26v1.01h.03c.31-.59 1.08-1.21 2.22-1.21 2.37 0 2.81 1.56 2.81 3.59v3.99Z"/></svg></a>
+    </div>
+  </div>
+  <section class="detail-hero">
+    <span class="hero-eyebrow">Web Module</span>
+    <h1>SmartSitesGalleryFormatter</h1>
+    <p class="lead">Paste live HTML or rich text straight from the clipboard and it rebuilds a clean, formatted image gallery — pulling in missing alt text automatically via the OpenAI API. Fully responsive.</p>
+    <div class="card-badges">
+      <span class="card-badge">C#/.NET</span><span class="card-badge">Blazor Server</span>
+    </div>
+    <p class="ai-note">AI-assisted with Anthropic Claude Code</p>
+    <p><a class="card-link" href="https://nerdommicro.com/smartsites-gallery" target="_blank" rel="noopener">Try it live at nerdommicro.com/smartsites-gallery →</a></p>
+  </section>
+
+  <div class="detail-slideshow" data-slideshow="detail">
+    <img id="detailSlide1" class="active" src="../images/SmartSitesGalleryFormatter-Screenshot1.png" alt="SmartSitesGalleryFormatter tool" />
+    <img id="detailSlide2" src="../images/SmartSitesGalleryFormatter-Screenshot2.png" alt="SmartSitesGalleryFormatter in use" />
+    <img id="detailSlide3" src="../images/SmartSitesGalleryFormatter-Screenshot3.png" alt="SmartSitesGalleryFormatter output" />
+  </div>
+  <div class="detail-thumbs" data-thumbs="detail">
+    <button type="button" class="active" data-slide="detailSlide1" style="background-image:url('../images/SmartSitesGalleryFormatter-Screenshot1.png')" aria-label="Show screenshot 1"></button>
+    <button type="button" data-slide="detailSlide2" style="background-image:url('../images/SmartSitesGalleryFormatter-Screenshot2.png')" aria-label="Show screenshot 2"></button>
+    <button type="button" data-slide="detailSlide3" style="background-image:url('../images/SmartSitesGalleryFormatter-Screenshot3.png')" aria-label="Show screenshot 3"></button>
+  </div>
+
+  <div class="sections">
+    <div class="section-card">
+      <h3>Core MVP</h3>
+      <ul>
+        <li>Paste raw site HTML, extract images</li>
+        <li>Auto-detect orientation &amp; dimensions</li>
+        <li>Rebuild a clean, centered, CMS-safe gallery</li>
+      </ul>
+    </div>
+    <div class="section-card">
+      <h3>Employer Skills</h3>
+      <ul>
+        <li>HTML parsing &amp; extraction</li>
+        <li>Image metadata probing</li>
+        <li>Blazor Server component design</li>
+      </ul>
+    </div>
+    <div class="section-card">
+      <h3>Future Features</h3>
+      <ul>
+        <li>Refined slideshow-with-buttons toggle</li>
+        <li>Bulk multi-gallery batch formatting</li>
+        <li>Presets beyond SmartSites/ParentSquare</li>
+      </ul>
+    </div>
+  </div>
+</main>
+<footer><a href="https://m1sh3ll.github.io/" target="_blank" rel="noopener">MicroApps</a> — Michelle Nesbitt's portfolio.</footer>
+<script src="../script.js"></script>
+</body>
+</html>
